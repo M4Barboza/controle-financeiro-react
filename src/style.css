@@ -1,7 +1,7 @@
 p{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    gap: 10px;
+   text-align: start;
+   border-bottom: inset;
+   padding-bottom: 5px;
+   text-align: ${(props) => (props.alignCenter ? "center" : "start")};
+   width: ${(props) => (props.width ? props.width + "%" : "auto")};
 }
